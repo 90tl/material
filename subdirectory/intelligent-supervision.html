@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>智慧监理小场景及主要功能介绍视频</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <style>
-      .detail {
-        border: 1px solid rgb(43, 87, 124);
-      }
-    </style>
-  </head>
-  <body>
-    <div class="root">
-      <div class="outer-box">
-        <div class="inner-box">
-          <div class="title">智慧监理小场景及主要功能介绍视频</div>
-          <div class="content">
-            <div class="menu">
-              <span class="menu-title">目录</span>
-              <a
-                href=""
-                class="menu-item"
-                >场景一：融合物联网技术，实现问题闭环处置</a
-              >
-              <a
-                href=""
-                class="menu-item"
-                >场景二：智慧监理数据自动形成电子档案</a
-              >
-              <a
-                href=""
-                class="menu-item"
-                >场景三：智慧监理助力行业支撑</a
-              >
-              <a
-                href=""
-                class="menu-item"
-                >主要功能介绍</a
-              >
-              <a
-                href="../index.html"
-                class="menu-item"
-                >返回总目录</a
-              >
-            </div>
-            <div class="detail">
-              <img
-                src=""
-                alt=""
-              />
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>智慧监理小场景及主要功能介绍视频</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById("cj1").style = "color: red";
+    }
+    function cj1_method() {
+      document.getElementById("cj1").style = "color: red";
+      document.getElementById("cj2").style = "color: purple";
+      document.getElementById("cj3").style = "color: purple";
+      document.getElementById("cj4").style = "color: purple";
+      document.getElementById("v_video").hidden = false;
+      document.getElementById("v_video").src = "https://tl-1318077843.cos.ap-beijing.myqcloud.com/1.mp4";
+    };
+    function cj2_method() {
+      document.getElementById("cj2").style = "color: red";
+      document.getElementById("cj1").style = "color: purple";
+      document.getElementById("cj3").style = "color: purple";
+      document.getElementById("cj4").style = "color: purple";
+      document.getElementById("v_video").hidden = false;
+      document.getElementById("v_video").src = "https://tl-1318077843.cos.ap-beijing.myqcloud.com/2.mp4";
+    };
+    function cj3_method() {
+      document.getElementById("cj3").style = "color: red";
+      document.getElementById("cj1").style = "color: purple";
+      document.getElementById("cj2").style = "color: purple";
+      document.getElementById("cj4").style = "color: purple";
+      document.getElementById("v_video").hidden = false;
+      document.getElementById("v_video").src = "https://tl-1318077843.cos.ap-beijing.myqcloud.com/3.mp4";
+    };
+    function cj4_method() {
+      document.getElementById("cj4").style = "color: red";
+      document.getElementById("cj1").style = "color: purple";
+      document.getElementById("cj2").style = "color: purple";
+      document.getElementById("cj3").style = "color: purple";
+      document.getElementById("v_video").hidden = true;
+    };
+  </script>
+</head>
+
+<body>
+  <div class="root">
+    <div class="outer-box">
+      <div class="inner-box">
+        <div class="title">智慧监理小场景及主要功能介绍视频</div>
+        <div class="content">
+          <div class="menu">
+            <span class="menu-title">目录</span>
+            <a href="#" class="menu-item" onclick="cj1_method()" id="cj1">场景一：融合物联网技术，实现问题闭环处置</a>
+            <a href="#" class="menu-item" onclick="cj2_method()" id="cj2">场景二：智慧监理数据自动形成电子档案</a>
+            <a href="#" class="menu-item" onclick="cj3_method()" id="cj3">场景三：智慧监理助力行业支撑</a>
+            <a href="#" class="menu-item" onclick="cj4_method()" id="cj4">主要功能介绍</a>
+            <a href="../index.html" class="menu-item">返回总目录</a>
+          </div>
+          <div class="detail">
+            <video src="https://tl-1318077843.cos.ap-beijing.myqcloud.com/1.mp4" controls="controls" autoplay="autoplay"
+              id="v_video"></video>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
