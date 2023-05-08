@@ -7,6 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>成果证明材料</title>
   <link rel="stylesheet" href="../css/style.css">
+  <script type="text/javascript">
+    function one_method() {
+      document.getElementById("p_pdf").hidden = false;
+      document.getElementById("p_pdf").src = "https://tl-1318077843.cos.ap-beijing.myqcloud.com/%E7%AC%AC%E4%B8%80%E5%86%8C.pdf";
+    };
+    function two_method() {
+      document.getElementById("p_pdf").hidden = false;
+      document.getElementById("p_pdf").src = "https://tl-1318077843.cos.ap-beijing.myqcloud.com/%E7%AC%AC%E4%BA%8C%E5%86%8C.pdf";
+    };
+    function three_method() {
+      document.getElementById("p_pdf").hidden = true;
+    };
+    function four_method() {
+      document.getElementById("p_pdf").hidden = false;
+      document.getElementById("p_pdf").src = "https://tl-1318077843.cos.ap-beijing.myqcloud.com/%E7%AC%AC%E5%9B%9B%E5%86%8C.pdf";
+    };
+  </script>
 </head>
 
 <body>
@@ -17,15 +34,15 @@
         <div class="content">
           <div class="menu">
             <span class="menu-title">目录</span>
-            <a href="" class="menu-item">第一册</a>
-            <a href="" class="menu-item">第二册</a>
-            <a href="" class="menu-item">第三册</a>
-            <a href="" class="menu-item">第四册</a>
+            <a href="#" class="menu-item" onclick="one_method()">第一册</a>
+            <a href="#" class="menu-item" onclick="two_method()">第二册</a>
+            <a href="#" class="menu-item" onclick="three_method()">第三册</a>
+            <a href="#" class="menu-item" onclick="four_method()">第四册</a>
             <a href="../index.html" class="menu-item">返回总目录</a>
           </div>
           <div class="detail">
             <embed src="https://tl-1318077843.cos.ap-beijing.myqcloud.com/%E7%AC%AC%E4%B8%80%E5%86%8C.pdf" width="100%"
-              height="100%"></embed>
+              height="100%" id="p_pdf"></embed>
           </div>
         </div>
       </div>
